@@ -9,5 +9,12 @@ This repository acts as the **Meta-Intelligence Layer** for the project. While o
 - `/STRAT-XXX.md`: Sequential Strategic Audits and Blind-Spot reports.
 - `User-Manual.md`: Operational guidelines for the Chronos-Nexus role.
 
+## 🧠 Strategic Memory (What we store)
+To prevent "Architectural Amnesia," this brain tracks four specific types of meta-data:
+1.  **STRAT-XXX (Strategic Audits)**: High-level reports on project trajectory and "Truth Bombs" regarding the current state.
+2.  **Strategic Patterns**: Identification of "What always works" vs "What always breaks" in this specific ecosystem.
+3.  **The Anti-Backlog**: A record of conscious decisions **NOT** to implement a feature or pattern, preventing recurring debates on settled topics.
+4.  **Blind-Spot Logs**: Observations of risks that were invisible to the execution squad (Developers/Architects).
+
 ## 🔗 Connection
 Linked to the **Lead Developer** loop via the `core-kms-brain/Role-Prompts/00-Oracle/`.
