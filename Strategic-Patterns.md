@@ -13,4 +13,4 @@
 - **Atomic Fleet Actions**: If a multi-repo update fails on one repo, the entire action is halted for manual review.
 
 ---
-*Reference: [[nexus-strategic-brain/README]], [[STRAT-001-The-Dormant-Pipeline]]*
+*Reference: [[01-Strategic-Nexus/README]], [[STRAT-001-The-Dormant-Pipeline]]*

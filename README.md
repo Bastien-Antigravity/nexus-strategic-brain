@@ -17,4 +17,4 @@ To prevent "Architectural Amnesia," this brain tracks four specific types of met
 4.  **Blind-Spot Logs**: Observations of risks that were invisible to the execution squad (Developers/Architects).
 
 ## 🔗 Connection
-Linked to the **Lead Developer** loop via the `core-kms-brain/Role-Prompts/00-Oracle/`.
+Linked to the **Lead Developer** loop via the `07-Core-KMS/Role-Prompts/00-Oracle/`.

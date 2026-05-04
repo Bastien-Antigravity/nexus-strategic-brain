@@ -18,4 +18,4 @@ To prevent "Architectural Amnesia" where the same discarded ideas are re-debated
 - **Alternative**: The **Super-Bridge** (`universal-logger`).
 
 ---
-*Reference: [[nexus-strategic-brain/README]], [[Global-Architecture-Rules]]*
+*Reference: [[01-Strategic-Nexus/README]], [[Global-Architecture-Rules]]*
