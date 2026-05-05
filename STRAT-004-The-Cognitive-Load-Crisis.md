@@ -1,8 +1,11 @@
----
+--- 
+status: active
+microservice: obsidian-brain
+
 type: meta-audit
 id: STRAT-004
 date: 2026-05-03
-author: Chronos-Nexus
+author: Chronos-Oracle
 ---
 # 👁️ Strategic Audit 004: The Cognitive Load Crisis
 

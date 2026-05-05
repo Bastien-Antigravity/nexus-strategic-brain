@@ -1,8 +1,11 @@
----
+--- 
+status: active
+microservice: obsidian-brain
+
 type: meta-audit
 id: STRAT-001
 date: 2026-05-03
-author: Chronos-Nexus
+author: Chronos-Oracle
 ---
 # 👁️ Strategic Audit 001: The "Dormant Pipeline" Risk
 

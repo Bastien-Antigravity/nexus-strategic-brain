@@ -1,3 +1,9 @@
+---
+microservice: obsidian-brain
+type: strategy
+status: active
+---
+
 # 🚫 The Anti-Backlog
 
 > "The historical record of conscious decisions NOT to implement a feature, pattern, or library."

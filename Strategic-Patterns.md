@@ -1,3 +1,9 @@
+---
+microservice: obsidian-brain
+type: strategy
+status: active
+---
+
 # 🧩 Strategic Patterns
 
 > "Recurring architectural and operational truths that govern the Bastien-Antigravity ecosystem."
