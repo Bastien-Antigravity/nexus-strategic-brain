@@ -1,3 +1,9 @@
+---
+microservice: nexus-strategic-brain
+type: governance
+status: active
+---
+
 # ⚡ AI Initialization: nexus-strategic-brain
 
 > [!IMPORTANT] MANDATORY INITIALIZATION
