@@ -29,7 +29,7 @@ We have a **Sentinel**, a **Fleet Architect**, and a **QA Layer**, but they are 
 *   **The Status**: We have a world-class delivery truck, but we haven't decided what we're selling yet.
 
 ## ⚖️ Global Law Assessment: "The Hub Fallacy"
-We are violating the **[[03-Tech-Stack/02-Project-Architecture/Global-Architecture-Rules#1. Architecture & Organization|Decoupling Law]]** by making the `config-server` a mandatory, synchronous dependency for service boot.
+We are violating the **[[03-Tech-Stack/02-Project-Architecture/Global-Architecture-Rules]]** by making the `config-server` a mandatory, synchronous dependency for service boot.
 
 ## 🎯 Oracle's Recommendation (The Improvements)
 

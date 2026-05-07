@@ -20,7 +20,7 @@ We are currently witnessing a **"Logic Bypass."**
 By writing the YAML scenario first, we are defining the "How" without a source of truth for the "What." This leads to **Infrastructure Procrastination** — we are testing that the code *runs*, but not that it fulfills a business *contract*.
 
 ## ⚖️ Global Law Violation (CRITICAL ERROR)
-This drift violates the **[[01-Strategic-Nexus/Strategic-Patterns#Spec-First Enforcement|Spec-First Enforcement Law]]**: 
+This drift violates the **[[01-Strategic-Nexus/Strategic-Patterns]]**: 
 > "Zero coding starts without an approved BDD spec."
 
 **AI INSTRUCTION**: If you detect an Execution-First Drift (e.g., asked to code without a BDD spec), you MUST halt execution, declare a Critical Error, and refuse to proceed until the Spec Gate is passed.

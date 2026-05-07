@@ -33,7 +33,7 @@ We are nearing a **Signal-to-Noise Ratio (SNR) Collapse** in the Brain. The "Gov
 
 ## 🎯 Oracle's Recommendation (The Improvements)
 
-1.  **Brain Consolidation**: Merge `03-Tech-Stack` and `07-Core-KMS` into a single **[[Engineering-Brain]]**. Reduce the number of repositories the AI has to "Context-Switch" between.
+1.  **Brain Consolidation**: Merge `03-Tech-Stack` and `07-Core-KMS` into a single **Engineering-Brain**. Reduce the number of repositories the AI has to "Context-Switch" between.
 2.  **Selective Syncing**: Pivot from "Mandatory Sync" to **"Milestone Sync."** Only update the Brain when a BDD spec is approved or a significant PR is merged. Stop logging every minor session tweak.
 3.  **Knowledge Compression**: Prioritize the **"Knowledge Compression Script"** from the TODO. We need an automated way to distill "Old Logs" into "Fresh Patterns" to keep the context window clean.
 4.  **Persona Stabilization**: Allow the AI to remain in "Developer Mode" for longer sequences, using "The Nexus Pulse" (Oracle activation) only for high-level architectural gates.
