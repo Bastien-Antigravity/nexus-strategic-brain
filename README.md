@@ -1,5 +1,5 @@
 --- 
-microservice: obsidian-brain
+microservice: nexus-strategic-brain
 type: documentation
 status: active
 ---

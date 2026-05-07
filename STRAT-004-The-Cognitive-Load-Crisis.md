@@ -1,6 +1,6 @@
 --- 
 status: active
-microservice: obsidian-brain
+microservice: nexus-strategic-brain
 
 type: meta-audit
 id: STRAT-004
