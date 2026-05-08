@@ -2,6 +2,10 @@
 microservice: nexus-strategic-brain
 type: strategy
 status: active
+tags:
+- '#type/strategy'
+- null
+- '#state/active'
 ---
 
 # 🧩 Strategic Patterns

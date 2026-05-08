@@ -2,6 +2,10 @@
 microservice: strategy-audit-moc
 type: moc
 status: active
+tags:
+- '#state/active'
+- null
+- '#type/moc'
 ---
 
 # Strategy Audit MOC

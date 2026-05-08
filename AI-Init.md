@@ -2,6 +2,10 @@
 microservice: nexus-strategic-brain
 type: governance
 status: active
+tags:
+- '#type/governance'
+- null
+- '#state/active'
 ---
 
 # ⚡ AI Initialization: nexus-strategic-brain

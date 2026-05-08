@@ -1,11 +1,14 @@
---- 
+---
 status: active
 microservice: nexus-strategic-brain
-
 type: meta-audit
 id: STRAT-002
 date: 2026-05-03
 author: Chronos-Oracle
+tags:
+- '#type/meta-audit'
+- null
+- '#state/active'
 ---
 # 👁️ Strategic Audit 002: The "Execution-First" Drift
 

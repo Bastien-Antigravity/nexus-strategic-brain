@@ -1,7 +1,11 @@
---- 
+---
 microservice: nexus-strategic-brain
 type: documentation
 status: active
+tags:
+- null
+- '#type/documentation'
+- '#state/active'
 ---
 # 🌌 Strategic Oracle Brain
 
