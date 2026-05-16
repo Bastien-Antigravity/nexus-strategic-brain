@@ -6,6 +6,7 @@ id: STRAT-001
 date: 2026-05-03
 author: Chronos-Oracle
 tags:
+- \'#service/nexus-strategic-brain\'
 - '#type/meta-audit'
 - null
 - '#state/active'

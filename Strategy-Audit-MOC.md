@@ -3,6 +3,7 @@ microservice: strategy-audit-moc
 type: moc
 status: active
 tags:
+- \'#service/strategy-audit-moc\'
 - '#state/active'
 - null
 - '#type/moc'
