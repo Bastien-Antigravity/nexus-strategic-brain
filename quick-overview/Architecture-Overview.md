@@ -1,5 +1,4 @@
 ---
-
 microservice: nexus-strategic-brain
 type: architecture
 status: active

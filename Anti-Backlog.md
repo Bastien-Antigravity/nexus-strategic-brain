@@ -1,6 +1,4 @@
 ---
-
-
 microservice: nexus-strategic-brain
 type: strategy
 status: active
@@ -9,7 +7,6 @@ tags:
 - '#type/strategy'
 - '#state/active'
 - '#tier/strategy'
-
 ---
 # 🚫 The Anti-Backlog
 

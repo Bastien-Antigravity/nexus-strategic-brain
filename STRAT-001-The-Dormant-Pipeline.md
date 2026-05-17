@@ -1,6 +1,4 @@
 ---
-
-
 status: active
 microservice: nexus-strategic-brain
 type: meta-audit

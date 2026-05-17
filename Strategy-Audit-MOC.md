@@ -1,6 +1,4 @@
 ---
-
-
 microservice: strategy-audit-moc
 type: moc
 status: active

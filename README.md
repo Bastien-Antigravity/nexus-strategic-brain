@@ -1,6 +1,4 @@
 ---
-
-
 microservice: nexus-strategic-brain
 type: documentation
 status: active
