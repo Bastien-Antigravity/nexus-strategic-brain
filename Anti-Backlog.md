@@ -1,16 +1,15 @@
 ---
+
 microservice: nexus-strategic-brain
 type: strategy
 status: active
 tags:
 - \'#service/nexus-strategic-brain\'
 - '#type/strategy'
-- null
 - '#state/active'
 - '#tier/strategy'
 
 ---
-
 # 🚫 The Anti-Backlog
 
 > "The historical record of conscious decisions NOT to implement a feature, pattern, or library."

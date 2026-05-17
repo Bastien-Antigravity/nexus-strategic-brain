@@ -3,6 +3,7 @@ microservice: nexus-strategic-brain
 type: architecture
 status: active
 tags:
+- \'#zone/3-fleet\'
 - '#ai/ignore'
 - '#service/nexus-strategic-brain'
 ---
