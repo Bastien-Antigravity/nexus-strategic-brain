@@ -35,7 +35,7 @@ The **Sentinel** (Role 09) is the primary auditor for this repository. It runs a
 ### Link Integrity Validation
 Run the centralized link validator to ensure that the cross-repo knowledge graph is not broken:
 ```bash
-python3 20-Scripts/verify_links_script.py --path 01-Strategic-Nexus
+python3 20-Scripts/vault-sentinel.py --path 01-Strategic-Nexus
 ```
 
 ## 📈 Success Metrics
