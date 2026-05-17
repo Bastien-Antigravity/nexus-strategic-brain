@@ -7,6 +7,8 @@ tags:
 - '#type/strategy'
 - null
 - '#state/active'
+- '#tier/strategy'
+
 ---
 
 # 🚫 The Anti-Backlog
@@ -27,6 +29,13 @@ To prevent "Architectural Amnesia" where the same discarded ideas are re-debated
 - **Decision Date**: 2026-05-02
 - **Reason**: Caused "Multiple Go Runtime" panics and memory isolation issues when Python/Rust loaded separate Go-based shared libraries.
 - **Alternative**: The **Super-Bridge** (`universal-logger`).
+
+### 3. Fragmented Knowledge Silos (PARA-only)
+- **Decision Date**: 2026-05-16
+- **Reason**: Caused "Reasoning Lag" and high token consumption due to excessive context-switching between 10+ repositories.
+- **Alternative**: **Engineering-Brain Consolidation** (Merging Tech-Stack and Core-KMS).
+
+
 
 ---
 *Reference: [[01-Strategic-Nexus/README]], [[Global-Architecture-Rules]]*

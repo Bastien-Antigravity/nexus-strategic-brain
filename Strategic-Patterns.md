@@ -7,6 +7,8 @@ tags:
 - '#type/strategy'
 - null
 - '#state/active'
+- '#tier/strategy'
+
 ---
 
 # 🧩 Strategic Patterns
@@ -22,6 +24,9 @@ tags:
 - **Spec-First Enforcement**: Zero coding starts without an approved BDD spec.
 - **Fail-Fast Security**: Reject unauthenticated or oversized payloads at the socket layer, not the application layer.
 - **Atomic Fleet Actions**: If a multi-repo update fails on one repo, the entire action is halted for manual review.
+- **The Sovereignty Ritual**: Mandatory Mission Sign-off and Git-aware stateless auditing before any fleet-wide merge.
+- **Multi-AI Agnostic CLI**: All orchestration scripts must run on standard `python3` and avoid agent-specific syntax to ensure cross-platform/cross-AI compatibility.
+
 
 ---
 *Reference: [[01-Strategic-Nexus/README]], [[STRAT-001-The-Dormant-Pipeline]]*
