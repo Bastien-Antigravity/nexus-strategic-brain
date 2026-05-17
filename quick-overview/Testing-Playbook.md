@@ -1,13 +1,13 @@
 ---
+
 microservice: nexus-strategic-brain
 type: architecture
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#ai/ignore'
 - '#service/nexus-strategic-brain'
 ---
-
 # 🧪 Strategic Nexus: Testing Playbook
 
 Testing in the Strategic Nexus is not about "Unit Tests" but about **Semantic Integrity** and **Reasoning Consistency**. We test the Oracle to ensure its "Prophecies" are grounded in reality.

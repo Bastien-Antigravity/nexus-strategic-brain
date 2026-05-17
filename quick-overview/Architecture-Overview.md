@@ -1,13 +1,13 @@
 ---
+
 microservice: nexus-strategic-brain
 type: architecture
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#ai/ignore'
 - '#service/nexus-strategic-brain'
 ---
-
 # 🛰️ Strategic Nexus: Architecture Overview
 
 The **Strategic Nexus** (Internal ID: `nexus-strategic-brain`) serves as the **Meta-Intelligence Layer** and **Strategic Oracle** for the Bastien-Antigravity ecosystem. It is designed to prevent "Architectural Amnesia" and combat "Execution-First Drift" by synthesizing project history into actionable strategic directives.

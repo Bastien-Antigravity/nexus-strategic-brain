@@ -1,13 +1,13 @@
 ---
+
 microservice: nexus-strategic-brain
 type: architecture
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#ai/ignore'
 - '#service/nexus-strategic-brain'
 ---
-
 # 📚 Strategic Nexus: General & Misc
 
 This document covers the "Librarian" and meta-data standards that keep the Strategic Nexus navigable and machine-readable for the AI Squad.

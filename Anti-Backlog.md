@@ -1,10 +1,11 @@
 ---
 
+
 microservice: nexus-strategic-brain
 type: strategy
 status: active
 tags:
-- \'#service/nexus-strategic-brain\'
+- '#service/nexus-strategic-brain'
 - '#type/strategy'
 - '#state/active'
 - '#tier/strategy'

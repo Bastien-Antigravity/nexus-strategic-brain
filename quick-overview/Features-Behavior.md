@@ -1,13 +1,13 @@
 ---
+
 microservice: nexus-strategic-brain
 type: architecture
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#ai/ignore'
 - '#service/nexus-strategic-brain'
 ---
-
 # 🎭 Strategic Nexus: Features & Behavior
 
 The Strategic Nexus is not a static document repository; it is a **Live Strategic Engine**. It exhibits specific behaviors designed to maintain the "Architectural North Star" of the Bastien-Antigravity ecosystem.

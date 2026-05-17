@@ -1,5 +1,6 @@
 ---
 
+
 status: active
 microservice: nexus-strategic-brain
 type: meta-audit
@@ -7,8 +8,8 @@ id: STRAT-001
 date: 2026-05-03
 author: Chronos-Oracle
 tags:
-- \'#zone/3-fleet\'
-- \'#service/nexus-strategic-brain\'
+- '#zone/3-fleet'
+- '#service/nexus-strategic-brain'
 - '#type/meta-audit'
 - '#state/active'
 ---

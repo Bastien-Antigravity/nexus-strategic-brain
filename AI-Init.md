@@ -1,10 +1,11 @@
 ---
 
+
 microservice: nexus-strategic-brain
 type: governance
 status: active
 tags:
-- \'#service/nexus-strategic-brain\'
+- '#service/nexus-strategic-brain'
 - '#type/governance'
 - '#state/active'
 - '#tier/governance'
