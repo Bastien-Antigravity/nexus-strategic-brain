@@ -1,4 +1,17 @@
-# ⚡ AI Initialization: 01-Strategic-Nexus
+---
+microservice: nexus-strategic-brain
+type: governance
+status: active
+tags:
+- \'#service/nexus-strategic-brain\'
+- '#type/governance'
+- null
+- '#state/active'
+- '#tier/governance'
+
+---
+
+# ⚡ AI Initialization: nexus-strategic-brain
 
 > [!IMPORTANT] MANDATORY INITIALIZATION
 > Copy and paste this prompt when starting a new session in this repository:
@@ -6,5 +19,7 @@
 > "1. Read the ecosystem map in **[[Ecosystem-Map-MOC]]**."
 > "2. Load project constraints from **[[AI-Project-DNA]]**."
 > "3. Restore session state from **[[AI-Session-State]]**."
-> "4. **Sentinel Audit**: Run `python3 07-Core-KMS/Scripts/Brain-Health-Audit.py` and resolve any drift."
+> "4. **Sentinel Audit**: Run `python 07-Core-KMS/Scripts/Brain-Health-Audit.py` and resolve any drift."
 > "5. **Squad Protocol**: You are now the **Lead Developer**. Identify and hire the required **Specialists** from `07-Core-KMS/Role-Prompts/03-Developer/Squad/`."
+> "6. **Mission Sign-off**: Before concluding, run the Mission Sign-off protocol to ensure stateless audit integrity."
+
