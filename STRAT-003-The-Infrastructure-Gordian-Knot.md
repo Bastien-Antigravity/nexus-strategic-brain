@@ -6,9 +6,9 @@ id: STRAT-003
 date: 2026-05-03
 author: Chronos-Oracle
 tags:
-- \'#service/nexus-strategic-brain\'
+- '#zone/3-fleet'
+- '#service/nexus-strategic-brain'
 - '#type/meta-audit'
-- null
 - '#state/active'
 ---
 # 👁️ Strategic Audit 003: The Infrastructure Gordian Knot

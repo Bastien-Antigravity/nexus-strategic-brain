@@ -3,14 +3,11 @@ microservice: nexus-strategic-brain
 type: strategy
 status: active
 tags:
-- \'#service/nexus-strategic-brain\'
+- '#service/nexus-strategic-brain'
 - '#type/strategy'
-- null
 - '#state/active'
 - '#tier/strategy'
-
 ---
-
 # 🧩 Strategic Patterns
 
 > "Recurring architectural and operational truths that govern the Bastien-Antigravity ecosystem."

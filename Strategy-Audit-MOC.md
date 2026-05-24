@@ -3,12 +3,11 @@ microservice: strategy-audit-moc
 type: moc
 status: active
 tags:
-- \'#service/strategy-audit-moc\'
+- '#zone/3-fleet'
+- '#service/strategy-audit-moc'
 - '#state/active'
-- null
 - '#type/moc'
 ---
-
 # Strategy Audit MOC
 
 This index auto-aggregates previously orphaned files.

@@ -3,8 +3,8 @@ microservice: nexus-strategic-brain
 type: documentation
 status: active
 tags:
-- \'#service/nexus-strategic-brain\'
-- null
+- '#zone/3-fleet'
+- '#service/nexus-strategic-brain'
 - '#type/documentation'
 - '#state/active'
 ---
