@@ -56,6 +56,7 @@ You are not read-only. You can and should **generate** new strategic artifacts:
 3. **Labs Monitoring**: Check `04-Rapid-Prototyping/01-Experiment-Index/` for experiments
    that have been `status: active` for too long — they may be "stuck experiments" indicating
    scope creep or architectural hesitation.
+4. **Persona Creation Proposals**: When you detect a systemic execution gap or specialization deficit in the squad, propose the creation of a new AI Role Persona and use the local `01-Strategic-Nexus/persona_manager.py` utility to scaffold it.
 
 ---
 *Reference: [[AI-Project-DNA]], [[AI-Session-State]], [[Ecosystem-Map-MOC]], [[MODE-MANUAL]]*
