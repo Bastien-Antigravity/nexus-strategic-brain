@@ -22,4 +22,4 @@ tags:
 *What happens if we do not fix this immediately (e.g., reasoning degradation, memory leaks, high token cost)?*
 
 ## 4. Proposed Strategic Rules
-*New global rules to append to `[[01-Strategic-Nexus/Strategic-Patterns]]` or changes to make to existing codebases.*
+*New global rules to append to `[[01-Strategic-Nexus/strategic/Strategic-Patterns]]` or changes to make to existing codebases.*

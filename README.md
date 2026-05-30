@@ -1,23 +1,30 @@
 ---
 microservice: nexus-strategic-brain
-type: documentation
+type: repository
 status: active
 tags:
 - '#zone/3-fleet'
 - '#service/nexus-strategic-brain'
-- '#type/documentation'
+- '#type/repository'
 - '#state/active'
 ---
-# 🌌 Strategic Oracle Brain
+# 🌌 Strategic Oracle Brain (01-Strategic-Nexus)
 
 > "The Strategic Memory and Predictive Oracle of the Bastien-Antigravity Ecosystem."
 
 ## 🎯 Purpose
 This repository acts as the **Meta-Intelligence Layer** for the project. It uses **Log-Driven Synthesis** to automatically analyze recent project history and session logs, focusing on **"Why"** and **"What Next"** to prevent reasoning drift and infrastructure procrastination.
 
-## 🏗️ Structure
-- `/STRAT-XXX.md`: Sequential Strategic Audits and Blind-Spot reports.
-- `User-Manual.md`: Operational guidelines for the Chronos-Oracle role.
+## 📚 Ecosystem Documentation
+This repository adheres to the fleet's documentation standards. Please refer to the following root files for core context:
+
+- **[[ARCHITECTURE]]**: The structural philosophy and 3-Tier Strategic Stack.
+- **[[TESTING]]**: The Sentinel Audit rules and validation workflows.
+- **[[AI-Project-DNA]]**: High-level intent and AI role constraints.
+- **[[AI-Session-State]]**: The current state of AI tasks in this repo.
+- **[[TODO]]**: Pending tasks and technical debt.
+
+*(Note: Human-friendly summaries are available in the `quick-overview/` directory).*
 
 ## 🧠 Strategic Memory (What we store)
 To prevent "Architectural Amnesia," this brain tracks four specific types of meta-data:
@@ -25,6 +32,13 @@ To prevent "Architectural Amnesia," this brain tracks four specific types of met
 2.  **Strategic Patterns**: Identification of "What always works" vs "What always breaks" in this specific ecosystem.
 3.  **The Anti-Backlog**: A record of conscious decisions **NOT** to implement a feature or pattern, preventing recurring debates on settled topics.
 4.  **Blind-Spot Logs**: Observations of risks that were invisible to the execution squad (Developers/Architects).
+
+## 🛠️ Management CLI
+The Strategic Nexus includes a `persona_manager` to automate role scaffolding:
+```bash
+# Start the virtual environment and run the CLI
+python3 main.py create-persona --name security-specialist --level 03 --specialty "Network Sec"
+```
 
 ## 🔗 Connection
 Linked to the **Lead Developer** loop via the `07-Core-KMS/Role-Prompts/00-Oracle/`.

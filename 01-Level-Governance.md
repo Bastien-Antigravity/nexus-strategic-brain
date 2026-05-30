@@ -39,7 +39,10 @@ All files within this level reside inside the `01-Strategic-Nexus/` folder:
 
 ```
 01-Strategic-Nexus/
-├── Strategy-Audit-MOC.md    # Master Map of Content listing all strategic reports
+├── strategic/
+│   ├── Strategy-Audit-MOC.md    # Master Map of Content listing all strategic reports
+│   ├── Strategic-Vision.md      # Long-term ecosystem roadmap
+│   └── Strategic-Patterns.md    # Recurring architectural truths
 ├── Anti-Backlog.md          # Registry of rejected ideas and resolved architecture choices
 ├── Role-Prompts/            # Home of the historical memory agent
 │   └── 00-Oracle/
@@ -57,4 +60,4 @@ All files within this level reside inside the `01-Strategic-Nexus/` folder:
 *   **Objective**: Perform retrospectives on session logs, raise warnings about context debt, evaluate the timeline of changes, and publish new `STRAT-XXX` audits when design drift is detected.
 
 ---
-*References: [[00-AI-Orchestration/00-Level-Governance]], [[Ecosystem-Map-MOC]], [[01-Strategic-Nexus/Strategy-Audit-MOC]]*
+*References: [[00-AI-Orchestration/00-Level-Governance]], [[Ecosystem-Map-MOC]], [[01-Strategic-Nexus/strategic/Strategy-Audit-MOC]]*
