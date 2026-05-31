@@ -3,10 +3,11 @@ microservice: nexus-strategic-brain
 type: documentation
 status: active
 tags:
-- '#zone/3-fleet'
 - '#service/nexus-strategic-brain'
-- '#type/documentation'
 - '#state/active'
+- '#tier/strategy'
+- '#type/documentation'
+- '#zone/3-fleet'
 ---
 # 🧬 Project DNA: 01-Strategic-Nexus
 

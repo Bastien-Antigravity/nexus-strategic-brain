@@ -4,9 +4,10 @@ type: strategy
 status: active
 tags:
 - '#service/nexus-strategic-brain'
-- '#type/strategy'
 - '#state/active'
 - '#tier/strategy'
+- '#type/strategy'
+- '#zone/3-fleet'
 ---
 # 🚫 The Anti-Backlog
 
@@ -35,4 +36,4 @@ To prevent "Architectural Amnesia" where the same discarded ideas are re-debated
 
 
 ---
-*Reference: [[01-Strategic-Nexus/README]], [[Global-Architecture-Rules]]*
+*Reference: [[README]], [[03-Tech-Stack/02-Project-Architecture/Global-Architecture-Rules|Global-Architecture-Rules]]*

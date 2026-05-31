@@ -4,9 +4,10 @@ type: strategy
 status: active
 tags:
 - '#service/nexus-strategic-brain'
-- '#type/strategy'
 - '#state/active'
-- '#zone/1-nexus'
+- '#tier/strategy'
+- '#type/strategy'
+- '#zone/3-fleet'
 ---
 # 🌌 Strategic Vision: Bastien-Antigravity
 
@@ -58,4 +59,4 @@ The fleet is a multi-language ecosystem (Go, Python, Rust). Reliability is ensur
 - **Quality**: QA (Verification) | Sentinel (Compliance).
 
 ---
-*Reference: [[01-Strategic-Nexus/strategic/Strategic-Patterns]], [[00-AI-Orchestration/AI-Project-DNA]], [[strategic/Strategy-Audit-MOC]]*
+*Reference: [[Strategic-Patterns]], [[00-AI-Orchestration/Governance/AI-Project-DNA]], [[Strategy-Audit-MOC]]*

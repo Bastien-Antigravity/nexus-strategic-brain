@@ -7,9 +7,10 @@ date: 2026-05-16
 author: Chronos-Oracle
 tags:
 - '#service/nexus-strategic-brain'
-- '#type/meta-audit'
 - '#state/active'
 - '#tier/strategy'
+- '#type/meta-audit'
+- '#zone/1-nexus'
 ---
 
 # 👁️ Strategic Audit 005: The Sovereignty Ritual

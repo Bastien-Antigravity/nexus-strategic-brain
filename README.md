@@ -3,10 +3,11 @@ microservice: nexus-strategic-brain
 type: repository
 status: active
 tags:
-- '#zone/3-fleet'
 - '#service/nexus-strategic-brain'
-- '#type/repository'
 - '#state/active'
+- '#tier/strategy'
+- '#type/repository'
+- '#zone/3-fleet'
 ---
 # 🌌 Strategic Oracle Brain (01-Strategic-Nexus)
 
@@ -18,8 +19,8 @@ This repository acts as the **Meta-Intelligence Layer** for the project. It uses
 ## 📚 Ecosystem Documentation
 This repository adheres to the fleet's documentation standards. Please refer to the following root files for core context:
 
-- **[[ARCHITECTURE]]**: The structural philosophy and 3-Tier Strategic Stack.
-- **[[TESTING]]**: The Sentinel Audit rules and validation workflows.
+- **[[quick-overview/Architecture-Overview|Architecture Overview]]**: The structural philosophy and 3-Tier Strategic Stack.
+- **[[00-Level-Governance#🧪 5. Quality & Verification (The Sentinel Audit)|Quality & Verification]]**: The Sentinel Audit rules and validation workflows.
 - **[[AI-Project-DNA]]**: High-level intent and AI role constraints.
 - **[[AI-Session-State]]**: The current state of AI tasks in this repo.
 - **[[TODO]]**: Pending tasks and technical debt.

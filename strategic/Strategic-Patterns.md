@@ -4,9 +4,10 @@ type: strategy
 status: active
 tags:
 - '#service/nexus-strategic-brain'
-- '#type/strategy'
 - '#state/active'
 - '#tier/strategy'
+- '#type/strategy'
+- '#zone/3-fleet'
 ---
 # 🧩 Strategic Patterns
 
@@ -26,4 +27,4 @@ tags:
 
 
 ---
-*Reference: [[01-Strategic-Nexus/README]], [[archive/STRAT-001-The-Dormant-Pipeline]]*
+*Reference: [[../README]], [[../archive/STRAT-001-The-Dormant-Pipeline|STRAT-001: The Dormant Pipeline]]*

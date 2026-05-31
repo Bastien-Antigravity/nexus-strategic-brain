@@ -4,8 +4,10 @@ type: template
 status: active
 tags:
 - '#service/nexus-strategic-brain'
-- '#type/template'
 - '#state/active'
+- '#tier/strategy'
+- '#type/template'
+- '#zone/1-nexus'
 ---
 # 🔄 Strategic Pivot: [Name of Pivot]
 
