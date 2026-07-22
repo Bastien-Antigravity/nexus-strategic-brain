@@ -17,6 +17,7 @@ tags:
 - **The Facade Law**: Core logic must always be wrapped in a language-agnostic facade (FFI/gRPC) to ensure polyglot compatibility.
 - **Static Loading Law**: Binaries must be statically linked to avoid shared object hell in Docker environments.
 - **The Super-Bridge**: Consolidated shared infrastructure (Logger + Config) into a single FFI boundary to prevent runtime panics.
+- **Unified Logger and Config Parity**: All python services and scripts MUST use the `UniLog` and `AppConfig` modules from the `microservice-toolbox` package by default. Never fallback to standard Python logging or config libraries in production code. Dynamic library paths must be aligned at boot to prevent double Go runtime initialization on macOS.
 
 ## 🚀 Operational Patterns
 - **Spec-First Enforcement**: Zero coding starts without an approved BDD spec.

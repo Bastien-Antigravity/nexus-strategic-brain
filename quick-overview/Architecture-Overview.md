@@ -1,4 +1,4 @@
----
+--- 
 title: Strategic Nexus Architecture Overview
 microservice: nexus-strategic-brain
 type: architecture

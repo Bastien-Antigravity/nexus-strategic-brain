@@ -35,11 +35,12 @@ To prevent "Architectural Amnesia," this brain tracks four specific types of met
 4.  **Blind-Spot Logs**: Observations of risks that were invisible to the execution squad (Developers/Architects).
 
 ## 🛠️ Management CLI
-The Strategic Nexus includes a `persona_manager` to automate role scaffolding:
+The Strategic Nexus Go microservice automates role prompt scaffolding:
 ```bash
-# Start the virtual environment and run the CLI
-python3 main.py create-persona --name security-specialist --level 03 --specialty "Network Sec"
+# Run the compiled binary to generate a new squad role prompt
+./bin/strategic-nexus create-persona --name security-specialist --level 03 --specialty "Network Sec"
 ```
+
 
 ## 🔗 Connection
 Linked to the **Lead Developer** loop via the `07-Core-KMS/Role-Prompts/00-Oracle/`.

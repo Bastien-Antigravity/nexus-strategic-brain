@@ -1,4 +1,4 @@
----
+--- 
 microservice: nexus-strategic-brain
 type: template
 status: active

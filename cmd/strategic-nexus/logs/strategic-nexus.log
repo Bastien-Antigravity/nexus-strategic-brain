@@ -1,0 +1,6 @@
+2026-07-11T11:46:13.703269000Z    iMac.local   strategic-nexus        INFO       source-context       runtime-caller-skipped    0      Initializing Strategic-Nexus Go Microservice... [metadata: pid=32089 pname=main]
+2026-07-11T11:46:13.969940000Z    iMac.local   strategic-nexus        INFO       source-context       runtime-caller-skipped    0      Controller: Processing incoming command 'sync-strategic-memory' [metadata: pid=32089 pname=main]
+2026-07-11T11:46:13.969960000Z    iMac.local   strategic-nexus        INFO       source-context       runtime-caller-skipped    0      Controller: Syncing strategic memory from vault at '..' [metadata: pid=32089 pname=main]
+2026-07-11T12:18:24.522845000Z    iMac.local   strategic-nexus        INFO       source-context       runtime-caller-skipped    0      Initializing Strategic-Nexus Go Microservice... [metadata: pid=38262 pname=main]
+2026-07-11T12:18:24.648102000Z    iMac.local   strategic-nexus        INFO       source-context       runtime-caller-skipped    0      Controller: Processing incoming command 'sync-strategic-memory' [metadata: pid=38262 pname=main]
+2026-07-11T12:18:24.648112000Z    iMac.local   strategic-nexus        INFO       source-context       runtime-caller-skipped    0      Controller: Syncing strategic memory from vault at '..' [metadata: pid=38262 pname=main]

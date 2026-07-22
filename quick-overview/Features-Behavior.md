@@ -1,4 +1,4 @@
----
+--- 
 microservice: nexus-strategic-brain
 type: architecture
 status: active
@@ -7,6 +7,8 @@ tags:
 - '#service/nexus-strategic-brain'
 - '#tier/strategy'
 - '#zone/3-fleet'
+- '#type/architecture'
+- '#state/active'
 ---
 # 🎭 Strategic Nexus: Features & Behavior
 

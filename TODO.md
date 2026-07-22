@@ -25,6 +25,6 @@ status: active
 - [ ] Integrate with the global Fleet-Operation brain.
 
 ## 🛠 Technical Debt
-- [ ] Implement/Restore `persona_manager.py` to enable automated persona scaffolding.
-- [ ] Refactor `persona_manager.py` to use standardized logging.
+- [x] Implement/Restore Go-native persona scaffolding via `create-persona` CLI subcommand.
 - [ ] Fix Triple-Block Header in all scripts.
+
