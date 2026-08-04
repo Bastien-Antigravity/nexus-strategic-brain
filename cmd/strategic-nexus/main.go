@@ -113,7 +113,7 @@ func main() {
 	if len(os.Args) >= 2 && !strings.HasPrefix(os.Args[1], "-") {
 		subcommand := os.Args[1]
 		cmdArgs := os.Args[2:]
-		
+
 		ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 		defer cancel()
 
@@ -124,7 +124,6 @@ func main() {
 			os.Exit(1)
 		}
 
-		
 		// Print successful JSON response
 		fmt.Printf("Command Status: SUCCESS\nPayload:\n")
 		for k, v := range res {
@@ -143,7 +142,6 @@ func main() {
 			}
 		}
 	}
-
 
 	// Start Open MFE REST server
 	mfeClient := rest.NewMFEClient(controller, appLogger, restPort)

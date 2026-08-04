@@ -78,7 +78,7 @@ func (mfe *MFEClient) Start(ctx context.Context) error {
 		}
 
 		w.Header().Set("Content-Type", "application/json")
-		
+
 		// Run via controller
 		res, err := mfe.controller.ProcessCommand(r.Context(), payload.Command, payload.Args)
 		if err != nil {
@@ -96,7 +96,7 @@ func (mfe *MFEClient) Start(ctx context.Context) error {
 	}
 
 	mfe.logger.Info("MFEClient: Starting HTTP REST API portal on port %d...", mfe.port)
-	
+
 	// Start server in background goroutine
 	go func() {
 		if err := mfe.server.ListenAndServe(); err != nil && err != http.ErrServerClosed {

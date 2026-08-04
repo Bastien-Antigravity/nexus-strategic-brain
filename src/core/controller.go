@@ -412,4 +412,3 @@ func formatPascalCase(s string) string {
 	}
 	return strings.Join(parts, "")
 }
-
