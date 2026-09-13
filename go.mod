@@ -3,7 +3,7 @@ module github.com/Bastien-Antigravity/strategic-nexus
 go 1.25.4
 
 require (
-	github.com/Bastien-Antigravity/microservice-toolbox v0.0.1
+	github.com/Bastien-Antigravity/microservice-toolbox/go v1.2.2
 	github.com/Bastien-Antigravity/universal-logger v0.0.1
 	github.com/google/generative-ai-go v0.19.0
 	github.com/jackc/pgx/v5 v5.5.5
@@ -18,9 +18,9 @@ require (
 	cloud.google.com/go/auth/oauth2adapt v0.2.2 // indirect
 	cloud.google.com/go/compute/metadata v0.9.0 // indirect
 	cloud.google.com/go/longrunning v0.5.7 // indirect
-	github.com/Bastien-Antigravity/distributed-config v0.0.1 // indirect
+	github.com/Bastien-Antigravity/distributed-config v1.9.922 // indirect
 	github.com/Bastien-Antigravity/flexible-logger v0.0.1 // indirect
-	github.com/Bastien-Antigravity/safe-socket v0.0.1 // indirect
+	github.com/Bastien-Antigravity/safe-socket v1.8.2 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/colega/zeropool v0.0.0-20230505084239-6fb4a4f75381 // indirect
 	github.com/edsrzf/mmap-go v1.2.0 // indirect
@@ -57,7 +57,3 @@ require (
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-
-
-

@@ -13,6 +13,16 @@ cloud.google.com/go/compute/metadata v0.9.0 h1:pDUj4QMoPejqq20dK0Pg2N4yG9zIkYGdB
 cloud.google.com/go/compute/metadata v0.9.0/go.mod h1:E0bWwX5wTnLPedCKqk3pJmVgCBSM6qQI1yTBdEb3C10=
 cloud.google.com/go/longrunning v0.5.7 h1:WLbHekDbjK1fVFD3ibpFFVoyizlLRl73I7YKuAKilhU=
 cloud.google.com/go/longrunning v0.5.7/go.mod h1:8GClkudohy1Fxm3owmBGid8W0pSgodEMwEAztp38Xng=
+github.com/Bastien-Antigravity/distributed-config v1.9.922 h1:oOQPQ1o/a/WHqzl/4t+W9mBE8VyovAX0GjVu1qdtgsg=
+github.com/Bastien-Antigravity/distributed-config v1.9.922/go.mod h1:bMZEvfAUTmidVW1oa0iFrOXfP61wgG+Q6dUswhvGYPI=
+github.com/Bastien-Antigravity/flexible-logger v0.0.1 h1:p+NOLe1HwmY8ln65iudTyvzJfFiLdMbbW/gjsaeUmww=
+github.com/Bastien-Antigravity/flexible-logger v0.0.1/go.mod h1:QadMpflRxynzoMn7LUMnCCl3RVB603fgC5smQC5HsM0=
+github.com/Bastien-Antigravity/microservice-toolbox/go v1.2.2 h1:ueTdKJ/GJT//IrN/TDh4tkJpixhM509eHcI3JKxSRx8=
+github.com/Bastien-Antigravity/microservice-toolbox/go v1.2.2/go.mod h1:YvvqdLBCw72rKofboRpH3eUN+CGcnz8q4Epdsr3ksPU=
+github.com/Bastien-Antigravity/safe-socket v1.8.2 h1:qQQuNdEfA2j7qNcDIuaC8GQFAynTZbD6H5/lbMr6l7Q=
+github.com/Bastien-Antigravity/safe-socket v1.8.2/go.mod h1:ngCgFarvn3V+o248h48A5u+7Z4OSu2TgEMrWu3YQXe0=
+github.com/Bastien-Antigravity/universal-logger v0.0.1 h1:ce1zS+s1Z0vSuWo1KMpBm8/unYqEc9XzpCe5hgil2MI=
+github.com/Bastien-Antigravity/universal-logger v0.0.1/go.mod h1:xaoWYQGjdJl9icdn6pFn/SlUphPkj+CqftTtneVnzPE=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/cespare/xxhash/v2 v2.3.0 h1:UL815xU9SqsFlibzuggzjXhog7bL6oX9BbNZnL2UFvs=
