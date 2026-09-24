@@ -2,6 +2,11 @@
 microservice: 01-Strategic-Nexus
 type: governance
 status: active
+tags:
+- '#service/01-Strategic-Nexus'
+- '#type/governance'
+- '#state/active'
+- '#zone/3-fleet'
 ---
 
 # ⚡ AI Initialization: 01-Strategic-Nexus

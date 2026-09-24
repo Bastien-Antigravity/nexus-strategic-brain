@@ -1,4 +1,13 @@
-# AGENTS.md: nexus-strategic-brain (01-Strategic-Nexus)
+---
+microservice: 08-Base-Scripts
+type: note
+status: active
+tags:
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
+---# AGENTS.md: nexus-strategic-brain (01-Strategic-Nexus)
 
 ## Service Mission & Architecture Role
 `01-Strategic-Nexus` is the strategic orchestration, evolutionary governance, and milestone management microservice for the Bastien-Antigravity fleet. It manages strategic intent, connects with the TimescaleDB (`obsidiandb`), runs AI prompt evolutionary pipelines via Gemini, hosts an OpenMFE micro-frontend, and provides remote interactive controls over Telegram via `tele-remote`.
