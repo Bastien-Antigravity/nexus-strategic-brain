@@ -16,7 +16,7 @@ This artifact provides an updated analysis of the functioning of `main.py`, `ui.
 
 ## 🗺️ Architectural Context: Legacy to Modern OOP
 
-The repository continues its transition from legacy procedural scripts (`08-Base-Scripts/`) to a modern OOP engine facade (`main.py` & `src/`). A series of critical patches have successfully made the OOP framework much more operational.
+The repository continues its transition from legacy procedural scripts (`08-Squad-Agent/`) to a modern OOP engine facade (`main.py` & `src/`). A series of critical patches have successfully made the OOP framework much more operational.
 
 ---
 
@@ -59,14 +59,14 @@ While the main engine and imports have been successfully corrected, a critical d
 
 ## 🧹 Cleanup and Deprecation Candidates (Requires REMOVAL)
 
-### 1. Duplicate `08-Base-Scripts - ori` Folder
-- **Status**: Still present.
-- **Recommendation**: Delete `/Users/imac/Desktop/Bastien-Antigravity/obsidian-brain/08-Base-Scripts - ori`.
+### 1. Duplicate legacy backup Folder
+- **Status**: Removed.
+- **Recommendation**: Ensure `/Users/imac/Desktop/Bastien-Antigravity/obsidian-brain/08-Squad-Agent` remains authoritative.
 
 ---
 
 ## 📈 Summary of Next Steps
 
 1. **Fix `ui.py`**: Clean up the duplicated chat logic blocks and remove the non-existent `get_messages` call.
-2. **Clean Workspace**: Delete the `08-Base-Scripts - ori` backup folder.
+2. **Clean Workspace**: Confirmed legacy backup folder removed.
 3. **OpenAI Provider Tool Support**: Implement tool serializations in `src/providers/openai.py`.

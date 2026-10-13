@@ -83,7 +83,7 @@ The **Sentinel** (Role 09) ensures the Oracle's "Prophecies" are grounded in rea
 - **The "Loop-Back" Test**: Select a recommendation from a previous `STRAT` document and search the fleet (using `fleet-manager.py`) to verify implementation. If missing, generate a follow-up audit.
 - **Link Validation**: Run the centralized link validator to ensure the cross-repo knowledge graph is intact:
   ```bash
-  python3 08-Base-Scripts/archive/vault-sentinel.py --path 01-Strategic-Nexus
+  python3 08-Squad-Agent/main.py brain-health-audit
   ```
 
 ---

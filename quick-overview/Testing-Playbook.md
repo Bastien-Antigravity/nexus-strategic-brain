@@ -32,8 +32,8 @@ We run periodic scans to ensure:
 
 ## ⚙️ Key Rituals for Humans
 If you are manually auditing the brain, you can run:
-- **Link Validator**: `python3 08-Base-Scripts/archive/vault-sentinel.py --path 01-Strategic-Nexus`
-- **Health Audit**: `python3 08-Base-Scripts/Brain-Health-Audit.py`
+- **Link Validator**: `python3 08-Squad-Agent/main.py check-coherence`
+- **Health Audit**: `python3 08-Squad-Agent/main.py brain-health-audit`
 
 ---
 > **Authority**: For the full technical specification of these rituals, see: **[[01-Level-Governance#🧪 5. Quality & Verification (The Sentinel Audit)|Quality & Verification (Full Spec)]]**

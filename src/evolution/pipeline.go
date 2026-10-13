@@ -169,7 +169,7 @@ func (ep *EvolutionPipeline) RunEvolution(ctx context.Context, promptName, curre
 	// 3. Evaluate Fitness
 	testCases := []map[string]string{
 		{"input": "Return action result for preflight check", "expected": "action"},
-		{"input": "Initialize base scripts configurations", "expected": "success"},
+		{"input": "Initialize squad agent configurations", "expected": "success"},
 	}
 
 	var fitness float64
