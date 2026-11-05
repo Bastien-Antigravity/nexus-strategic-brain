@@ -17,6 +17,7 @@ import (
 	"context"
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 
@@ -48,38 +49,43 @@ func main() {
 	appLogger.Info("Initializing Strategic-Nexus Go Microservice...")
 
 	// 3. Resolve Timescale Database Configurations
-	timescaleDBVal, exists := appConfig.Capabilities["timescale_db"]
-	if !exists {
-		appLogger.Error("Database config 'capabilities.timescale_db' is missing. Exiting.")
-		os.Exit(1)
+	var tsCap struct {
+		IP       string `json:"ip"`
+		Port     string `json:"port"`
+		User     string `json:"user"`
+		Password string `json:"password"`
+		DBName   string `json:"db_name"`
 	}
-	timescaleDB, ok := timescaleDBVal.(map[string]interface{})
-	if !ok {
-		appLogger.Error("Database config 'capabilities.timescale_db' is invalid. Exiting.")
-		os.Exit(1)
-	}
-
 	dbHost := "127.0.0.1"
-	if host, exists := timescaleDB["ip"]; exists {
-		dbHost = fmt.Sprintf("%v", host)
-	}
 	dbPort := 5432
-	if portVal, exists := timescaleDB["port"]; exists {
-		fmt.Sscanf(fmt.Sprintf("%v", portVal), "%d", &dbPort)
-	}
 	dbUser := "dbuser"
-	if user, exists := timescaleDB["user"]; exists {
-		dbUser = fmt.Sprintf("%v", user)
-	}
 	dbPassword := "dbuser"
-	if pass, exists := timescaleDB["password"]; exists {
-		dbPassword = fmt.Sprintf("%v", pass)
-		// Perform decryptions if configured in the handler
-		if decPass, err := appConfig.DecryptSecret(dbPassword); err == nil {
-			dbPassword = decPass
-		}
-	}
 	dbName := "obsidiandb"
+
+	if err := appConfig.GetCapability("timescale_db", &tsCap); err == nil {
+		if tsCap.IP != "" {
+			dbHost = tsCap.IP
+		}
+		if tsCap.Port != "" {
+			if p, err := strconv.Atoi(tsCap.Port); err == nil {
+				dbPort = p
+			}
+		}
+		if tsCap.User != "" {
+			dbUser = tsCap.User
+		}
+		if tsCap.Password != "" {
+			dbPassword = tsCap.Password
+			if decPass, err := appConfig.DecryptSecret(dbPassword); err == nil {
+				dbPassword = decPass
+			}
+		}
+		if tsCap.DBName != "" {
+			dbName = tsCap.DBName
+		}
+	} else {
+		appLogger.Warning("Database config 'capabilities.timescale_db' unresolvable: %v. Running with fallback defaults.", err)
+	}
 
 	// 4. Initialize Database Manager (pgx Pool & Migrations)
 	dbManager, err := store.NewDBManager(dbHost, dbPort, dbUser, dbPassword, dbName, appLogger)
@@ -92,13 +98,11 @@ func main() {
 	// 5. Resolve Gemini API Key
 	apiKey := os.Getenv("GEMINI_API_KEY")
 	if apiKey == "" {
-		geminiConfVal, exists := appConfig.Capabilities["gemini"]
-		if exists {
-			if geminiConf, ok := geminiConfVal.(map[string]interface{}); ok {
-				if key, exists := geminiConf["api_key"]; exists {
-					apiKey = fmt.Sprintf("%v", key)
-				}
-			}
+		var geminiCap struct {
+			APIKey string `json:"api_key"`
+		}
+		if err := appConfig.GetCapability("gemini", &geminiCap); err == nil && geminiCap.APIKey != "" {
+			apiKey = geminiCap.APIKey
 		}
 	}
 
@@ -134,12 +138,12 @@ func main() {
 
 	// 9. Default Mode: Run background services
 	restPort := 8092
-	restConfVal, exists := appConfig.Capabilities["strategic_nexus"]
-	if exists {
-		if restConf, ok := restConfVal.(map[string]interface{}); ok {
-			if portVal, exists := restConf["mfe_port"]; exists {
-				fmt.Sscanf(fmt.Sprintf("%v", portVal), "%d", &restPort)
-			}
+	var nexusCap struct {
+		MFEPort string `json:"mfe_port"`
+	}
+	if err := appConfig.GetCapability("strategic_nexus", &nexusCap); err == nil && nexusCap.MFEPort != "" {
+		if p, err := strconv.Atoi(nexusCap.MFEPort); err == nil {
+			restPort = p
 		}
 	}
 
