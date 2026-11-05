@@ -197,8 +197,10 @@ func (ep *EvolutionPipeline) RunEvolution(ctx context.Context, promptName, curre
 		ep.logger.Info("[Genetic-Evolution] Success! Saved improved draft to Pending/%s", filepath.Base(draftPath))
 
 		// Log proposal to Database
-		if err := ep.db.ProposeSkill(ctx, promptName, mutatedRules, "trace_evol_go_01"); err != nil {
-			ep.logger.Error("[Genetic-Evolution] Failed to save skill proposal in DB: %v", err)
+		if ep.db != nil {
+			if err := ep.db.ProposeSkill(ctx, promptName, mutatedRules, "trace_evol_go_01"); err != nil {
+				ep.logger.Error("[Genetic-Evolution] Failed to save skill proposal in DB: %v", err)
+			}
 		}
 	} else {
 		ep.logger.Info("[Genetic-Evolution] Mutation discarded due to low fitness score.")

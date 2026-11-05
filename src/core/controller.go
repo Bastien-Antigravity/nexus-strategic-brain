@@ -50,8 +50,10 @@ func NewStrategicController(db DBManager, evol EvolutionPipeline, logger Logger)
 }
 
 func (sc *StrategicController) LogMilestone(ctx context.Context, sessionID, milestone, action, outcome string) (map[string]interface{}, error) {
-	if err := sc.db.LogAction(ctx, sessionID, milestone, action, outcome); err != nil {
-		return nil, err
+	if sc.db != nil {
+		if err := sc.db.LogAction(ctx, sessionID, milestone, action, outcome); err != nil {
+			return nil, err
+		}
 	}
 	return map[string]interface{}{
 		"status":    "success",
@@ -103,6 +105,8 @@ func (sc *StrategicController) CreatePersona(ctx context.Context, name, level, s
 		folderName = "12-PatternSentinel"
 	case "13":
 		folderName = "13-Prototyper"
+	case "14":
+		folderName = "14-DebloatSentinel"
 	}
 
 	// 2. Convert name from kebab-case (e.g. security-specialist) to Title Case (e.g. Security Specialist)
@@ -193,17 +197,21 @@ func (sc *StrategicController) ProcessCommand(ctx context.Context, command strin
 
 	case "run-evolution":
 		promptName := "Python-Integration-Specialist"
-		if len(args) > 0 {
-			promptName = args[0]
-		}
 		dryRun := false
 		promptPath := ""
+		var positional []string
 		for _, arg := range args {
 			if arg == "--dry-run" {
 				dryRun = true
-			} else if arg != promptName && !stringsHasPrefix(arg, "-") {
-				promptPath = arg
+			} else if !strings.HasPrefix(arg, "-") {
+				positional = append(positional, arg)
 			}
+		}
+		if len(positional) > 0 {
+			promptName = positional[0]
+		}
+		if len(positional) > 1 {
+			promptPath = positional[1]
 		}
 		return sc.TriggerEvolution(ctx, promptName, promptPath, dryRun)
 
@@ -247,10 +255,12 @@ func (sc *StrategicController) SyncStrategicMemory(ctx context.Context, vaultRoo
 	if data, err := os.ReadFile(antiBacklogPath); err == nil {
 		items := parseAntiBacklog(string(data))
 		for _, item := range items {
-			if err := sc.db.UpsertDecision(ctx, item["id"], item["title"], item["category"], item["content"]); err != nil {
-				sc.logger.Warning("Failed to upsert anti-backlog item %s: %v", item["id"], err)
-			} else {
-				count++
+			if sc.db != nil {
+				if err := sc.db.UpsertDecision(ctx, item["id"], item["title"], item["category"], item["content"]); err != nil {
+					sc.logger.Warning("Failed to upsert anti-backlog item %s: %v", item["id"], err)
+				} else {
+					count++
+				}
 			}
 		}
 	} else {
@@ -261,10 +271,12 @@ func (sc *StrategicController) SyncStrategicMemory(ctx context.Context, vaultRoo
 	if data, err := os.ReadFile(patternsPath); err == nil {
 		items := parseStrategicPatterns(string(data))
 		for _, item := range items {
-			if err := sc.db.UpsertDecision(ctx, item["id"], item["title"], item["category"], item["content"]); err != nil {
-				sc.logger.Warning("Failed to upsert pattern item %s: %v", item["id"], err)
-			} else {
-				count++
+			if sc.db != nil {
+				if err := sc.db.UpsertDecision(ctx, item["id"], item["title"], item["category"], item["content"]); err != nil {
+					sc.logger.Warning("Failed to upsert pattern item %s: %v", item["id"], err)
+				} else {
+					count++
+				}
 			}
 		}
 	} else {
@@ -311,10 +323,12 @@ func (sc *StrategicController) SyncStrategicMemory(ctx context.Context, vaultRoo
 			}
 		}
 
-		if err := sc.db.UpsertDecision(ctx, idMatch, title, "audit", cleanContent); err != nil {
-			sc.logger.Warning("Failed to upsert audit %s: %v", idMatch, err)
-		} else {
-			count++
+		if sc.db != nil {
+			if err := sc.db.UpsertDecision(ctx, idMatch, title, "audit", cleanContent); err != nil {
+				sc.logger.Warning("Failed to upsert audit %s: %v", idMatch, err)
+			} else {
+				count++
+			}
 		}
 	}
 
@@ -333,12 +347,11 @@ func parseAntiBacklog(content string) []map[string]string {
 	reHeader := regexp.MustCompile(`^###\s+\d+\.\s+(.*)`)
 
 	for _, line := range lines {
-		if reHeader.MatchString(line) {
+		if match := reHeader.FindStringSubmatch(line); len(match) > 1 {
 			if currentItem != nil {
 				currentItem["content"] = strings.TrimSpace(strings.Join(itemContent, "\n"))
 				items = append(items, currentItem)
 			}
-			match := reHeader.FindStringSubmatch(line)
 			currentItem = map[string]string{
 				"title":    strings.TrimSpace(match[1]),
 				"category": "anti-backlog",
@@ -374,8 +387,7 @@ func parseStrategicPatterns(content string) []map[string]string {
 
 	index := 1
 	for _, line := range lines {
-		if rePattern.MatchString(line) {
-			match := rePattern.FindStringSubmatch(line)
+		if match := rePattern.FindStringSubmatch(line); len(match) > 2 {
 			items = append(items, map[string]string{
 				"id":       fmt.Sprintf("PAT-%03d", index),
 				"title":    strings.TrimSpace(match[1]),

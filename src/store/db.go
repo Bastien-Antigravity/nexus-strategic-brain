@@ -140,6 +140,9 @@ func (db *DBManager) InitSchema(ctx context.Context) error {
 }
 
 func (db *DBManager) LogAction(ctx context.Context, sessionID, milestone, action, outcome string) error {
+	if db == nil || db.Pool == nil {
+		return nil
+	}
 	query := fmt.Sprintf(`
 		INSERT INTO "%s".strategic_logs (session_id, milestone, action_taken, outcome)
 		VALUES ($1, $2, $3, $4)
@@ -149,6 +152,9 @@ func (db *DBManager) LogAction(ctx context.Context, sessionID, milestone, action
 }
 
 func (db *DBManager) ProposeSkill(ctx context.Context, skillName, proposedRules, sourceTraceID string) error {
+	if db == nil || db.Pool == nil {
+		return nil
+	}
 	query := fmt.Sprintf(`
 		INSERT INTO "%s".evolutive_skills (skill_name, proposed_rules, source_trace_id, status)
 		VALUES ($1, $2, $3, 'pending')
@@ -160,6 +166,9 @@ func (db *DBManager) ProposeSkill(ctx context.Context, skillName, proposedRules,
 }
 
 func (db *DBManager) UpsertDecision(ctx context.Context, decisionID, title, category, content string) error {
+	if db == nil || db.Pool == nil {
+		return nil
+	}
 	query := fmt.Sprintf(`
 		INSERT INTO "%s".strategic_decisions (decision_id, title, category, content)
 		VALUES ($1, $2, $3, $4)
@@ -174,6 +183,9 @@ func (db *DBManager) UpsertDecision(ctx context.Context, decisionID, title, cate
 }
 
 func (db *DBManager) GetDecisions(ctx context.Context) ([]map[string]interface{}, error) {
+	if db == nil || db.Pool == nil {
+		return []map[string]interface{}{}, nil
+	}
 	query := fmt.Sprintf(`
 		SELECT decision_id, title, category, content, status, created_at, updated_at
 		FROM "%s".strategic_decisions
@@ -206,7 +218,8 @@ func (db *DBManager) GetDecisions(ctx context.Context) ([]map[string]interface{}
 }
 
 func (db *DBManager) Close() {
-	if db.Pool != nil {
-		db.Pool.Close()
+	if db == nil || db.Pool == nil {
+		return
 	}
+	db.Pool.Close()
 }
